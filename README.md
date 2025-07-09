@@ -65,14 +65,14 @@ A robust Java-based REST API test automation framework using **TestNG**, **Rest-
    If you are using WireMock, you can view the logs in the `wiremock/logs` directory to see the requests and responses.
 
 ## Assumptions & Limitations
-   ***API Key Required: Real API tests require a valid key for x-api-key in headers.***
+   API Key Required: Real API tests require a valid key for x-api-key in headers.
 
-   ***Internet Required: Tests run against a live API unless using a mock fallback.***
+   Internet Required: Tests run against a live API unless using a mock fallback.
 
-   ***Image IDs are dynamic: Some endpoints may fail if the image_id no longer exists.***
+   Image IDs are dynamic: Some endpoints may fail if the image_id no longer exists.
 
-   ***Test Data Not Persistent: Votes created via POST are not always retrievable unless API supports it reliably.***
+   Test Data Not Persistent: Votes created via POST are not always retrievable unless API supports it reliably.
 
-   ***Mock Server not yet preconfigured: WireMock support is planned but not implemented in this version.***
+   Mock Server not yet preconfigured: WireMock support is planned but not implemented in this version.
 
         
