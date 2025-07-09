@@ -1,0 +1,54 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "array",
+  "items": {
+    "type": "object",
+    "required": ["id", "name", "weight", "origin", "country_code", "description", "life_span"],
+    "properties": {
+      "id": { "type": "string" },
+      "name": { "type": "string" },
+      "weight": {
+        "type": "object",
+        "required": ["imperial", "metric"],
+        "properties": {
+          "imperial": { "type": "string" },
+          "metric": { "type": "string" }
+        }
+      },
+      "cfa_url": { "type": ["string", "null"] },
+      "vetstreet_url": { "type": ["string", "null"] },
+      "vcahospitals_url": { "type": ["string", "null"] },
+      "temperament": { "type": "string" },
+      "origin": { "type": "string" },
+      "country_codes": { "type": "string" },
+      "country_code": { "type": "string" },
+      "description": { "type": "string" },
+      "life_span": { "type": "string" },
+      "indoor": { "type": "integer" },
+      "lap": { "type": ["integer", "null"] },
+      "alt_names": { "type": "string" },
+      "adaptability": { "type": "integer" },
+      "affection_level": { "type": "integer" },
+      "child_friendly": { "type": "integer" },
+      "dog_friendly": { "type": "integer" },
+      "energy_level": { "type": "integer" },
+      "grooming": { "type": "integer" },
+      "health_issues": { "type": "integer" },
+      "intelligence": { "type": "integer" },
+      "shedding_level": { "type": "integer" },
+      "social_needs": { "type": "integer" },
+      "stranger_friendly": { "type": "integer" },
+      "vocalisation": { "type": "integer" },
+      "experimental": { "type": "integer" },
+      "hairless": { "type": "integer" },
+      "natural": { "type": "integer" },
+      "rare": { "type": "integer" },
+      "rex": { "type": "integer" },
+      "suppressed_tail": { "type": "integer" },
+      "short_legs": { "type": "integer" },
+      "wikipedia_url": { "type": ["string", "null"] },
+      "hypoallergenic": { "type": "integer" },
+      "reference_image_id": { "type": "string" }
+    }
+  }
+}
